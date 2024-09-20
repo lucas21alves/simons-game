@@ -1,3 +1,7 @@
+// Initialize AudioContext to fix the delay issue on Safari
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 // Preload audio files
 var audio0 = new Audio("./audio/click0.mp3");
 var audio1 = new Audio("./audio/click1.mp3");
