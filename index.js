@@ -52,6 +52,7 @@ function triggerSound(squareNum) {
     }
 
 }
+
 // Function to generate a random number between 0 and 3 (inclusive)
 function randomNumberGenerator_0_3() {
     return ( Math.floor( Math.random() * 4 ) )
@@ -101,7 +102,7 @@ function analysePlayerSequence() {
 
         else {
 
-            document.querySelector("h1").innerHTML = "OOOH GAME OVER! (Press <u>Space bar</u> or <u>Click</u> to play again)";
+            document.querySelector("h1").innerHTML = "<span class='redWarning'>OOOH GAME OVER!</span> (Press <u>Click</u> or <u>Space</u> to play again)";
 
             sequenceRandomNumArray = [];
 
@@ -122,7 +123,7 @@ function analysePlayerSequence() {
 
     if (sequencePlayerNumArray.length === sequenceRandomNumArray.length) {
         
-        document.querySelector("h1").innerHTML = "Nice! Press <u>Space bar</u> or <u>Click</u> to move to the next sequence.";
+        document.querySelector("h1").innerHTML = "Nice! Press <u>Click</u> or <u>Space</u> to move to the next sequence.";
         
         
         
@@ -140,9 +141,10 @@ var highestScore = 0;
 // Boolean to manage waiting for player input
 var waitPlayer = false;
 
-// Event listener for "Space bar" key press to start or restart the game
-document.addEventListener("keydown", function(Event) {
-    if (Event.code === "Space" & waitPlayer === false) {
+
+// Event listener for click events outside the squares to start or restart the game
+document.addEventListener("click", function(Event) {
+    if (waitPlayer === false & !Event.target.classList.contains("square")) {
 
         waitPlayer = true;
 
@@ -161,9 +163,9 @@ document.addEventListener("keydown", function(Event) {
     
 );
 
-// Event listener for click events outside the squares to start or restart the game
-document.addEventListener("click", function(Event) {
-    if (waitPlayer === false & !Event.target.classList.contains("square")) {
+// Event listener for "Space bar" key press to start or restart the game
+document.addEventListener("keydown", function(Event) {
+    if (Event.code === "Space" & waitPlayer === false) {
 
         waitPlayer = true;
 
