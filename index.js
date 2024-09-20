@@ -15,21 +15,25 @@ function triggerSound(squareNum) {
 
     if (squareNum === 0) {
         audio0 = new Audio("./audio/click0.mp3");
+        audio0.load();
         audio0.play();
     }
 
     else if (squareNum === 1) {
         audio1 = new Audio("./audio/click1.mp3");
+        audio1.load();
         audio1.play();
     }
 
     else if (squareNum === 2) {
         audio2 = new Audio("./audio/click2.mp3");
+        audio2.load();
         audio2.play();
     }
 
     else if (squareNum === 3) {
         audio3 = new Audio("./audio/click3.mp3");
+        audio3.load();
         audio3.play();
     }
 
