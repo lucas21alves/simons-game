@@ -145,3 +145,16 @@ h2 {
 .currentLevelDiv {
     padding-right: 7rem;
 }
+
+@media (max-width: 391px) {
+
+    body {
+        transform: scale(0.78);
+    }
+
+    .keyboardControl {
+        visibility: hidden;
+    }
+
+
+}
