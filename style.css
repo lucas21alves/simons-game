@@ -29,6 +29,7 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    margin-top: 7vh;
 }
 
 .gameName {
@@ -50,6 +51,12 @@ header{
 
 .hr {
     width: 100%;
+}
+
+.levelAndHighScore {
+    display: flex;
+    font-size: 3.0rem;
+    margin-top: 7vh;
 }
 
 .container {
@@ -174,13 +181,6 @@ h2 {
     background-color: blue;
 }
 
-.levelAndHighScore {
-    display: flex;
-    position: absolute;
-    bottom: 75vh;
-    font-size: 3.0rem;
-}
-
 .currentLevelDiv {
     padding-right: 7rem;
 }
@@ -191,32 +191,40 @@ h2 {
 
 @media (max-width: 431px) {
 
-
     body {
         transform: scale(0.78);
-        
     }
-
+    
     .creator {
         width: 100vw;
         font-size: 2rem;
     }
-    
 
+    .currentLevelDiv {
+        width: 9.8rem; 
+        padding-right: 2.00rem;
+    }
+
+    .highestScoreDiv {
+        width: 19.8rem; 
+    }
+    
     h1 {
         transform: scale(0.88);
-        margin-top: 15vh;
+        margin-top: 3vh;
         margin-bottom: 00vh;
         padding-top: 0vh;
         padding-bottom: 0vh;
         width: 100%;
-        height: 14rem;
+        height: 25vh;
         font-size: 50px;
         text-align: justify;
     }
 
     .squaresContainer {
-        margin-top: 5vh;
+        margin-top: 0vh;
+        gap: 3rem;
+        width: 22.2rem; 
     }
 
     .levelAndHighScore {
@@ -232,13 +240,5 @@ h2 {
         font-size: 3.0rem;
     }
 
-    .currentLevelDiv {
-        width: 9.8rem; 
-        padding-right: 2.00rem;
-    }
-
-    .highestScoreDiv {
-        width: 19.8rem; 
-    }
 
 }
