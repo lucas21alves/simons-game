@@ -2,7 +2,15 @@
     padding: 0;
     margin: 0;
     font-family: "Jersey 20", sans-serif;
-    
+    outline: red solid 1px;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
 body {
@@ -11,8 +19,38 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100vw;;
+    width: 100%;
     align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.gameName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator {
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.hr {
+    width: 100%;
 }
 
 .container {
@@ -29,8 +67,8 @@ h1{
     font-optical-sizing: auto;
     font-size: 54px;
     font-weight: 400;
-    padding-bottom: 10vh;
-    padding-top: 10vh;
+    padding-bottom: 9vh;
+    padding-top: 9vh;
     color: white;
 }
 
@@ -140,7 +178,7 @@ h2 {
 .levelAndHighScore {
     display: flex;
     position: absolute;
-    bottom: 90vh;
+    bottom: 75vh;
     font-size: 3.0rem;
 }
 
@@ -148,27 +186,60 @@ h2 {
     padding-right: 7rem;
 }
 
+.redWarning {
+    color: red;
+}
+
 @media (max-width: 431px) {
+
 
     body {
         transform: scale(0.78);
+        
     }
 
+    .creator {
+        width: 100vw;
+        font-size: 2rem;
+    }
+    
+
     h1 {
-        transform: scale(0.58);
+        transform: scale(0.88);
         margin-top: 15vh;
-        margin-bottom: 10vh;
-        width: 30rem;
-        height: 3rem;
+        margin-bottom: 00vh;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        width: 100%;
+        height: 14rem;
+        font-size: 50px;
+        text-align: justify;
+    }
+
+    .squaresContainer {
+        margin-top: 5vh;
     }
 
     .levelAndHighScore {
-        transform: scale(0.68);
+        transform: scale(0.80);
     }
 
     .keyboardControl {
-        visibility: hidden;
+        display: none;
     }
 
+    .levelAndHighScore {
+        bottom: 80vh;
+        font-size: 3.0rem;
+    }
+
+    .currentLevelDiv {
+        width: 9.8rem; 
+        padding-right: 2.00rem;
+    }
+
+    .highestScoreDiv {
+        width: 19.8rem; 
+    }
 
 }
