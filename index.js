@@ -1,3 +1,40 @@
+// Preload audio files
+var audio0 = new Audio("./audio/click0.mp3");
+var audio1 = new Audio("./audio/click1.mp3");
+var audio2 = new Audio("./audio/click2.mp3");
+var audio3 = new Audio("./audio/click3.mp3");
+
+// Wait for the audio to preload using the canplaythrough event
+audio0.addEventListener('canplaythrough', () => console.log('Audio 0 is ready'));
+audio1.addEventListener('canplaythrough', () => console.log('Audio 1 is ready'));
+audio2.addEventListener('canplaythrough', () => console.log('Audio 2 is ready'));
+audio3.addEventListener('canplaythrough', () => console.log('Audio 3 is ready'));
+
+// Function to play a sound corresponding to the square number
+function triggerSound(squareNum) {
+
+    if (squareNum === 0) {
+        audio0 = new Audio("./audio/click0.mp3");
+        audio0.play();
+    }
+
+    else if (squareNum === 1) {
+        audio1 = new Audio("./audio/click1.mp3");
+        audio1.play();
+    }
+
+    else if (squareNum === 2) {
+        audio2 = new Audio("./audio/click2.mp3");
+        audio2.play();
+    }
+
+    else if (squareNum === 3) {
+        audio3 = new Audio("./audio/click3.mp3");
+        audio3.play();
+    }
+
+}
+
 // Function to generate a random number between 0 and 3 (inclusive)
 function randomNumberGenerator_0_3() {
     return ( Math.floor( Math.random() * 4 ) )
@@ -179,27 +216,3 @@ for (let y = 0; y < keysToPlay.length; y++) {
     })
 }
 
-// Function to play a sound corresponding to the square number
-function triggerSound(squareNum) {
-
-    if (squareNum === 0) {
-        var audio0 = new Audio("./audio/click0.mp3");
-        audio0.play();
-    }
-
-    else if (squareNum === 1) {
-        var audio1 = new Audio("./audio/click1.mp3");
-        audio1.play();
-    }
-
-    else if (squareNum === 2) {
-        var audio2 = new Audio("./audio/click2.mp3");
-        audio2.play();
-    }
-
-    else if (squareNum === 3) {
-        var audio3 = new Audio("./audio/click3.mp3");
-        audio3.play();
-    }
-
-}
