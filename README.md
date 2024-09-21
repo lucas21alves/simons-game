@@ -1,4 +1,4 @@
-Simon's Game Developed by me. For Desktop and Mobile devices Web browsers. Try it! 
+Simon's Game, developed by me. For Desktop and Mobile devices Web browsers. Try it! 
 
 Link: https://lucas21alves.github.io/Simons-Game-by-Lucas-/
 
