@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game by Lucas</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+20&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <header>
+        <span class="gameName">Simon Game</span>
+        <span class="creator"><i>(Developed by Lucas Alves.)</i></span>
+    </header>
+
+    <hr class="hr">
+    
+    <div class="container">
+        <h1>Press <u>Click</u> or <u>Space</u> to Start !</h1>
+        <div class="squaresContainer">
+            <div class="greenSquare square"><span>0</span></div>
+            <div class="redSquare square"><span>1</span></div>
+            <div class="yellowSquare square"><span>2</span></div>
+            <div class="blueSquare square"><span>3</span></div>
+        </div>
+
+        <div class="keyboardControl">
+            <h2>Keyboard control</h2>
+            <span class="key_cont" id="i">i</span>
+            <span class="key_cont" id="o">o</span>
+            <span class="key_cont" id="k">k</span>
+            <span class="key_cont" id="l">l</span>
+        </div>
+
+        <div class="levelAndHighScore">
+            <div class="currentLevelDiv"><span>Level: <u class="currentLevelNum">0</u></span></div>
+            <div class="highestScoreDiv"><span>Highest Score: <u class="highestScoreNum">0</u></span></div>
+        </div>
+
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" 
+        integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    
+    <script src="./index.js"></script>
+
+</body>
+</html>
