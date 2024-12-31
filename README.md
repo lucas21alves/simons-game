@@ -1,4 +1,6 @@
-Simon's Game, developed by me. For Desktop and Mobile devices Web browsers. Try it! 
+Classic Simon Game built with HTML, CSS, and JavaScript. Includes interactive gameplay, keyboard controls, audio feedback using Howler.js, and dynamic level tracking. Focused on responsive design and efficient DOM manipulation to deliver a smooth user experience.
+
+Developed by me. For Desktop and Mobile devices Web browsers. Try it! 
 
 Link: https://lucas21alves.github.io/Simons-Game-by-Lucas-/
 
