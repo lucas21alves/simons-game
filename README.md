@@ -2,7 +2,7 @@ Classic Simon Game built with HTML, CSS, and JavaScript. Includes interactive ga
 
 Developed by me. For Desktop and Mobile devices Web browsers. Try it! 
 
-Link: https://lucas21alves.github.io/Simons-Game-by-Lucas-/
+Link: https://lucas21alves.github.io/simons-game/
 
 <hr>
 
