@@ -1,6 +1,6 @@
 // Initialize Howler.js
 const audio0 = new Howl({
-    src: ["./audio/click0.mp3"], // Path to your audio file
+    src: ["./assets/sounds/click0.mp3"], // Path to your audio file
     preload: true,              // Preload the audio to prevent delays
     onload: function() {
       console.log('audio0 loaded and ready to play');
@@ -8,7 +8,7 @@ const audio0 = new Howl({
 });
 
 const audio1 = new Howl({
-    src: ["./audio/click1.mp3"], // Path to your audio file
+    src: ["./assets/sounds/click1.mp3"], // Path to your audio file
     preload: true,              // Preload the audio to prevent delays
     onload: function() {
         console.log('audio1 loaded and ready to play');
@@ -16,7 +16,7 @@ const audio1 = new Howl({
 });
 
 const audio2 = new Howl({
-    src: ["./audio/click2.mp3"], // Path to your audio file
+    src: ["./assets/sounds/click2.mp3"], // Path to your audio file
     preload: true,              // Preload the audio to prevent delays
     onload: function() {
         console.log('audio2 loaded and ready to play');
@@ -24,7 +24,7 @@ const audio2 = new Howl({
 });
 
 const audio3 = new Howl({
-    src: ["./audio/click3.mp3"], // Path to your audio file
+    src: ["./assets/sounds/click3.mp3"], // Path to your audio file
     preload: true,              // Preload the audio to prevent delays
     onload: function() {
         console.log('audio3 loaded and ready to play');
